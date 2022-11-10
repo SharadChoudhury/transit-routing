@@ -14,6 +14,7 @@ def evaluate_Q1(sample_input1):
         graph_object = Dij_generator()
         start_time = time()
         candidate_output = [round(Q1_dijkstra(source, destination, graph_object)) for source, destination in sample_input1]
+        print(candidate_output)
         avg_runtime = avg_runtime + (time() - start_time) / len(sample_input1)
         if candidate_output == output_Q1Q2:
             marks = marksQ1
